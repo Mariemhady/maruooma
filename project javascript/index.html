@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css"/>
+		<meta charset="utf8"/>
+		
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#button1").click(function(){
+    $("#xxx").animate({left:'150px'});
+	$("#xxx").show();
+  });
+});
+</script> 
+	</head>
+	<body>
+	 
+	  		 <script>
+	   location.href;
+	    function test()
+		{
+		   
+		   var r=/([a-zA-Z]){3,}/;
+		   var s=document.getElementById('id').value;
+		  if(r.test(s))
+		  {
+		    document.getElementById('pass').focus();
+		    
+		  }
+		  else
+		  {
+		    document.getElementById('1').innerHTML="username invalid";
+			document.getElementById('id').focus();	
+			
+		  }
+		}
+		    function test2()
+		{
+		   
+		   var r=/([a-zA-Z]){3,}/;
+		   var s=document.getElementById('id').value;
+		  if(r.test(s))
+		  {
+		    document.getElementById('pass').focus();
+			var s=document.getElementById('pass').value;
+			if(s != ' ')
+			{
+			 location.replace("space_shooter_part_four.html");
+			}
+			else
+			{
+			 document.getElementById('pass').innerHTML="you must enter password";
+			 document.getElementById('pass').focus();
+			}
+		    
+		  }
+		  else
+		  {
+		    document.getElementById('1').innerHTML="username invalid";
+			document.getElementById('id').focus();	
+			
+		  }
+		}
+		   
+	 </script>
+	 <span id="1"> </span>
+		
+		<center>
+			<div id="container">
+				<div id="header1">
+				
+				</div>
+				<div id="header2">
+					<ul>
+							<li><button style="background-color: rgba(0, 0, 0, 0.1);color:white;border-color:rgba(0, 0, 0, 0.1);"id="button1"><b>Contact us</b></button></li>
+							<li><button style="background-color: rgba(0, 0, 0, 0.1);color:white;border-color:rgba(0, 0, 0, 0.1);"id="button1">About us</button></li>
+							<li><button style="background-color: rgba(0, 0, 0, 0.1);color:white;border-color:rgba(0, 0, 0, 0.1);"id="button1">Gallery</button></li>
+							<li><button style="background-color: rgba(0, 0, 0, 0.1);color:white;border-color:rgba(0, 0, 0, 0.1);"id="button1">Help</button></li>
+							<li><button style="background-color: rgba(0, 0, 0, 0.1);color:white;border-color:rgba(0, 0, 0, 0.1);"id="button1">Home</button></li>
+						</ul>
+											
+				</div>
+				<div id="xxx" style="background:white;height:600px;width:1030px;position:absolute;margin-top:50px;display:none;">
+</div>
+				
+				
+				<div id="text" style="color:white;">
+				
+				 <h1>
+				  WELCOME TO OUR WEBSITE
+				 </h1>
+				 <font>
+				    we are pleased for using our website , we have an interesting game <br/><br/>called "LMN" game
+					if you are exiting to play it please login your data here .
+				 </font>
+							
+				 <form>
+				   <b>Name:</b><input type="text" id="id" style="width:225px" onfocus="document.getElementById('id').value=' '" onblur="test()"/><br/><br/>
+				   <b>password:</b><input type="password" id="pass" style="padding-left:-20px;width:195px;"/><br/><br/>
+			     <input type="button" value="submit" style="margin-left:120px;background-color:#004452;color:white;" onclick="test2()">
+				 </form>
+				</div>
+				
+				
+				
+			</div>
+		</center>
+		
+		
+		
+	</body>
+</html>
